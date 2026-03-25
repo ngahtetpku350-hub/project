@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buy Page</title>
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .buy-card{
+        width: 80%;
+        height: 550px;
+        border: 1px solid transparent;
+        /* border-radius: 20px; */
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background: #F5F5F7;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .product-img img{
+        width: 250px;
+        height: 250px;
+    }
+    .product-img {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .order-input input{
+        width: 380px;
+        height: 40px;
+        padding: 10px;
+        border-bottom: 2px solid black;
+        border-radius: 20px;
+        /* border: none; */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .order-input .address{
+        height: 90px;
+    }
+    .order-input .btn-order{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        border: 1px solid blue;
+        transition: 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .order-input .btn-order:hover{
+        background: blue;
+        color: white;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <section class="buy-card">
+        <div class="product-img">
+            <div>
+                <img src="../img/g-bg1.png" alt="product img">
+            </div>
+            <div>
+                <p>Price: 230$</p>
+            </div>
+            
+        </div>
+        <div class="order-input">
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="tel" placeholder="Enter Your Phone Number" required>
+            <input class="address" type="text" placeholder="Address" required>
+            <input class="address" type="text" placeholder="Delivery guide" required>
+            <input class="btn-order" type="submit" value="Plale Order">
+            <a style="color: black; display: flex; justify-content: center;" href="index.html">back home</a>
+        </div>
+    </section>
+</body>
+</html>
