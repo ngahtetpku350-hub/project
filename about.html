@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Casio</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .aboutcasio-img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .aboutcasio-img img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .about-person{
+        width: 90%;
+        background: #F4F5F8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 40px;
+        padding: 30px;
+    }
+    .about-person h2{
+        margin: 0 0 30px 0;
+    }
+
+    .person-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .person-box .person-card{
+        background: white;
+        width: 30%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .person-card img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    .person-card h3,p{
+        text-align: center;
+    }
+
+/* company profile */
+.company-profile {
+    background: #F4F5F8;
+    width: 90%;
+    margin: 5% auto 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.company-profile h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+
+.profile-card {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.int-profile-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+}
+
+
+.int-profile-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.int-profile-card p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+/* 4brother history */
+        .casio-history{
+            margin-top: 30px;
+            display: flex;
+            width: 100%;
+            max-width: 90%;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+            gap: 40px;
+            padding: 20px 0 20px 0px;
+            background: #F4F5F8;
+        }
+        .casio-history-img{
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        .company-history-img img{
+            max-width: 100%;
+        }
+</style>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h2>CASIO</h2>
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+            </ul>
+        </div>
+        <div class="account">
+            <a class="btn btnlogin" href="login.html">Login</a>
+            <a class="btn btnsignup" href="signup.html">SignUp</a>
+        </div>
+    </div>
+    <section class="aboutcasio-img">
+        <img src="../img/aboutcasio.jpeg" alt="casio img">
+    </section>
+    <section class="about-person">
+        <div><h2 style="font-size: 40px;">Our Leater</h2></div>
+        <div class="person-box">
+            <div class="person-card">
+                <a href="chairman.html"><img src="../img/leter1.jpeg" alt="Chariman img"></a>
+                <h3>Message from the Chairman</h3>
+                <p>Creating New Value Through Transformation and Innovation</p>
+            </div>
+            <div class="person-card">
+                <a href="ceo.html"><img src="../img/leter2.jpeg" alt="CEO img"></a>
+                <br>
+                <h3>Message from the President</h3>
+                <p>Maximizing Corporate Value and Sustainable Growth</p>
+            </div>
+        </div>
+    </section>
+    <section class="company-profile">
+        <h2>Company Profile</h2>
+        <div class="profile-card">
+            <div class="int-profile-card">
+                <div>
+                    <h2>Company Name</h2>
+                </div>
+                <div>
+                    <p>CASIO COMPUTER CO., LTD.</p>
+                </div>
+            </div>
+            <div class="int-profile-card">
+                <div>
+                    <h2>Headquarters</h2>
+                </div>
+                <div>
+                    <p>6-2, Hon-machi 1-chome, Shibuya-ku, Tokyo</p>
+                </div>
+            </div>
+            <div class="int-profile-card">
+                <div>
+                    <h2>Established</h2>
+                </div>
+                <div>
+                    <p>June 1, 1957</p>
+                </div>
+            </div>
+            <div class="int-profile-card">
+                <div>
+                    <h2>Paid-in Capital*</h2>
+                </div>
+                <div>
+                    <p>48,592 million Yen</p>
+                </div>
+            </div>
+            <div class="int-profile-card">
+                <div>
+                    <h2>Net Sales*</h2>
+                </div>
+                <div>
+                    <p>261,757 million Yen
+                    Number of Employees*
+                    </p>
+                </div>
+            </div>
+            <div class="int-profile-card">
+                <div>
+                    <h2>Number of Employees*</h2>
+                
+                </div>
+                <div>
+                    <p>8,801</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+
+    <section class="casio-history">
+            <h2 class="casio-history-title">Histoer and Development</h2>
+        <div class="company-history-img">
+            <img src="../img/4brother.jpeg" alt="">
+            <div class="over-text">
+               <a href=https://world.casio.com/corporate/brothers>
+                <h1 style="text-align: center;"> 4 Brother History</h1>
+               </a> 
+            </div>
+        </div>
+        <div class="company-history-img">
+            <img src="../img/company-img10.jpeg" alt="">
+            <div>
+                <a href="https://world.casio.com/corporate/history/">
+                    <h1 style="text-align: center;">CASIO History</h1>
+                </a>
+            </div>
+        </div>
+        <div class="company-history-img">
+            <img src="../img/product-history.jpeg" alt="">
+            <div>
+                <a href="https://world.casio.com/corporate/history/chronology/">
+                    <h1 style="text-align: center;">Product History</h1>
+                </a>
+            </div>
+        </div>
+    </section>
+    <style>
+        .casio-social-media{
+            width: auto;margin-top: 40px;
+            background: #F5F5F5;
+        }
+        .casio-social-media h2{
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .casio-social-media img{
+            width: 90%;
+            max-width: 90%;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+            @media (max-width: 480px) {
+            .casio-social-media h2 {
+                font-size: 20px;
+            }
+        }
+        
+    </style>
+    <section class="casio-social-media">
+        <h2>Our Social Media</h2>
+        <div>
+            <a href="https://www.casio-intl.com/asia/en/socialmedia/"><img src="../img/youtube.jpg" alt="social media"></a>
+        </div>
+    </section>
+        <footer>
+        <div class="contact">
+            <div class="desc">
+                <h1>Watch World</h1>
+                <p>Enjoy your life with our watch</p>
+            </div>
+            <div class="phone">
+                <h1>+959764931148</h1>
+                <p>Email: ngahtetpku350@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem fugiat tempora doloremque atque rem totam neque beatae dolorum delectus in?</p>
+            </div>
+            <div class="footer-section">
+                <h3>Open Hours</h3>
+                <ul>
+                    <li>Monday - Friday: 9:00 AM - 8:00 PM</li>
+                    <li>Saturday: 10:00 AM - 6:00 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Address</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> No.123, Yangon, Myanmar</li>
+                    <li><i class="fas fa-phone"></i> +959764931148</li>
+                    <li><i class="fas fa-envelope"></i> ngahtetpku350@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy">
+            <div class="copyright">© 2026 Watch World Myanmar. All rights reserved.</div>
+            <div class="footer-links">
+                <a href="https://world.casio.com/privacy/">Privacy Policy</a>
+                <a href="https://world.casio.com/terms/">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

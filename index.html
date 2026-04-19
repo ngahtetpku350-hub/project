@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/icon.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
     <title>Home</title>
@@ -28,8 +29,9 @@
     .ads img{
         background: transparent;
         background-size: cover ;
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        max-width: 400px;
+        max-height: 400px;
     }
     .btnbuy{
         padding: 10px;
@@ -43,6 +45,37 @@
         background: rgb(82, 82, 188);
         color: white;
     }
+   .account .btnlogin {
+                background: transparent;
+                border-radius: 20px;
+                width: 100px;
+                height: 30px;
+                color: black;
+                border: 1px solid blue;   
+                text-decoration: none; 
+                padding: 10px;    
+    }
+    .account .btnlogin:hover{
+        background: blue;
+        color: white;
+    }
+    .account .btnsignup{
+        background: transparent;
+                border-radius: 20px;
+                width: 100px;
+                height: 30px;
+                color: black;
+                border: 1px solid black;   
+                text-decoration: none; 
+                padding: 10px;     
+    }
+    .account .btnsignup:hover{
+        background: gray;
+        color: white;
+    }
+
+
+
   </style>
 <body>
     <div class="nav">
@@ -58,7 +91,7 @@
                     <a href="shop.html">Shop</a>
                 </li>
                 <li>
-                    <a href="About Us">About</a>
+                    <a href="about.html">About</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact Us</a>
@@ -67,12 +100,15 @@
                     <a href="news.html">News</a>
                 </li>
             </ul>
+            
         </div>
         <div class="account">
-            <button class="btn btnlogin">Login</button>
-            <button class="btn btnsignup">Signup</button>
+            <a class="btn btnlogin" href="login.html">Login</a>
+            <a class="btn btnsignup" href="signup.html">SignUp</a>
         </div>
     </div>
+
+
     <section class="main-body">
         <div class="ads ads1">
             <div>
@@ -88,7 +124,7 @@
                 <img src="../img/g-bg1.png" alt="ads">
             </div>
         </div>
-                <div class="ads ads1">
+                <div class="ads ads2">
             <div>
                 <h2>New Model</h2>
                 <p>
@@ -102,7 +138,7 @@
                 <img src="../img/bg2.avif" alt="ads">
             </div>
         </div>
-                <div class="ads ads1">
+                <div class="ads ads">
             <div>
                 <h2>New Model</h2>
                 <p>

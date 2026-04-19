@@ -16,18 +16,28 @@
                 background-color: rgba(255, 255, 255, 0.432);
                 /* padding:5px 80px 20px ; */
                 padding: 0 30px 0 30px;
+                /* height: 40px; */
+                flex-wrap: wrap;
+                padding: 15px;
             }
             .logo img{
                 width: 60px;
                 height: 60px;
             } 
+            .links{
+                display: flex;
+                flex-wrap: wrap;
+            }
             .links ul{
                 display: flex;
+                flex-wrap: wrap;
             }
             .links ul li {
                 list-style: none;
                 justify-content: space-between;
                 margin: 20px;
+                display:inline-block;
+                flex-wrap: wrap;
                 
             }
             .links ul li a {
@@ -47,14 +57,16 @@
             .account {
                 margin-right: 10px;
             }
-            .btn {
+              .account .btn{
                 background: transparent;
                 border-radius: 20px;
                 width: 100px;
                 height: 30px;
                 color: black;
-                border: 1px solid black;
-            }
+                border: 1px solid black;   
+                text-decoration: none; 
+                padding: 10px;      
+    }
 
 /* Product cart design */
 .product-info .data .model{
@@ -63,8 +75,9 @@
 }
 .box{
         border-radius: 9px;
-        background-color:#F7F8FA;
-        width: 280px;
+        background:rgba(128, 128, 128, 0.046);
+        width: 100%;
+        max-width: 250px;
         height: auto;
         display: flex;
         align-items: center;
@@ -82,8 +95,9 @@
         margin-top: 4px;
     }
     .img img{
-        width: 150px;
-        height: 150px; 
+        width: 100%;
+        max-width: 150px;
+        max-height: 150px; 
         /* padding: 10px 0 0 0;   */
     }
     .main_box{
@@ -97,10 +111,17 @@
         column-gap: 5px;
         padding: 20px;
     }
+
+    /* slide box top */
+    .slidebox {
+        width: 100%;
+    }
     .slidebox img{
         background-position: center;
         background-size: cover;
         width: 100%;
+        max-width: 100%;
+        height: auto;
     }
     .product-list ul{
         display: flex;
@@ -132,7 +153,7 @@
 
     .buy-btn{
         width: 100%;
-        background: #000;
+        background: #00000044;
         color: white;
         font-size: 20px;
         height: 30px;
@@ -141,6 +162,12 @@
         padding-top: 5px;
         margin-top: 7px;
         border-radius: 6px;
+        border: 1px solid black;
+        transition: 0.8s;
+        cursor: pointer;
+    }
+    .buy-btn:hover{
+        background: #000;
     }
 
     .buy-btn a{
@@ -320,11 +347,15 @@
     animation: spin 3s infinite linear;
     width: fit-content;
 }
-
+.card{
+    width: 100%;
+    height: auto;
+}
 .card img{
     flex: 0 0 200px;
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    min-width: 150px;
+    min-height: 150px;
     background: transparent;
     text-align: center;
     border-radius: 20px;
@@ -411,4 +442,322 @@ swiper-container {
     .layer+:hover h3{
         opacity: 1;
         bottom: 50%;
+    }
+
+    /* Login section  */
+    #body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; 
+    padding: 20px; 
+}
+
+.login-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #F5F5F7;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.login-input input {
+    width: 90%;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.login-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    color: white;
+    background: blue;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#login-btn a {
+    color: black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.login-img img {
+    width: 100%; 
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.login-input-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #FFFFFF;
+    width: 280px;
+    height: 400px;
+    gap: 30px;
+    border-radius: 20px;
+    padding: 20px; 
+}
+
+.login-title {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 760px) {
+    .login-card {
+        width: 90%;
+        height: auto; 
+        min-height: auto;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    
+    .login-img {
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .login-img img {
+        max-width: 250px;
+    }
+    
+    .login-input-section {
+        width: 100%;
+        max-width: 320px; 
+        height: auto; 
+        min-height: 380px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #body {
+        padding: 10px;
+        height: auto; 
+        min-height: 100vh;
+    }
+    
+    .login-card {
+        width: 95%;
+        padding: 20px 15px;
+        height: auto;
+    }
+    
+    .login-img {
+        max-width: 180px; 
+        margin-bottom: 15px;
+    }
+    
+    .login-img img {
+        max-width: 180px;
+    }
+    
+    .login-input-section {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        min-height: 360px;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .login-input input {
+        width: 95%;
+        padding: 10px; 
+        font-size: 16px;
+    }
+    
+    .login-btn {
+        width: 95%;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .login-title h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* leter message */
+.leter-name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.message {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.message-section{
+        background: white;
+    }
+    .message-section .message{
+        font-size: 30px;
+        text-align: center;
+    } 
+    .chairman-img{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .chairman-img img{
+        width: 100%;
+        max-width: 300px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    }
+    .contace-info {
+        width: 80%;
+        margin: 50px auto 0 auto;
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .contace-info:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .message-title {
+        margin-bottom: 30px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .message-title h3 {
+        font-size: 1.8rem;
+        color: #2c3e50;
+        font-weight: 600;
+        margin: 0;
+        padding-bottom: 15px;
+        position: relative;
+        display: inline-block;
+        letter-spacing: -0.5px;
+    }
+    
+    .message-text {
+        line-height: 1.8;
+        color: #4a5568;
+        font-size: 1.05rem;
+    }
+    
+    .message-text p {
+        margin-bottom: 20px;
+        text-align: justify;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .message-text p:first-child::first-letter {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #667eea;
+        float: left;
+        line-height: 1;
+        margin-right: 12px;
+        margin-top: 4px;
+    }
+
+    /* Inded page ads design and some nav code  */
+        .ads{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F5F5F7;
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding: 30px;
+        gap: 30px;
+    }
+    .ads h2{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+    .ads img{
+        background: transparent;
+        background-size: cover ;
+        width: 100%;
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .btnbuy{
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid blue;
+        color: blue;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .btnbuy:hover{
+        background: rgb(82, 82, 188);
+        color: white;
+    }
+   .account .btnlogin {
+                background: transparent;
+                border-radius: 20px;
+                width: 100px;
+                height: 30px;
+                color: black;
+                border: 1px solid blue;   
+                text-decoration: none; 
+                padding: 10px;    
+    }
+    .account .btnlogin:hover{
+        background: blue;
+        color: white;
+    }
+    .account .btnsignup{
+        background: transparent;
+                border-radius: 20px;
+                width: 100px;
+                height: 30px;
+                color: black;
+                border: 1px solid black;   
+                text-decoration: none; 
+                padding: 10px;     
+    }
+    .account .btnsignup:hover{
+        background: gray;
+        color: white;
     }
