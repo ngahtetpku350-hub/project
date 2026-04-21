@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Signup - Responsive</title>
@@ -13,71 +14,6 @@
             align-items: center;
             height: 100vh;
         }
-        .signup-card{
-            width: 70%;
-            background: #F5F5F7;
-            border-radius: 20px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 500px;
-        }
-        .signup-card-form{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .signup-section{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 10px;
-            width: 90%;
-        }
-        .signup-section input{
-            width: 100%;
-            padding: 8px;
-            border: none;
-            border-radius: 15px;
-            max-width: 300px;
-        }
-        .signup-account {
-            text-align: center;
-            
-        }
-        .signup-account i{
-            margin: 30px;
-            cursor: pointer;
-            /* background: black; */
-        }
-        .btnregister:hover{
-            background: white;
-        }
-        .btngoogle{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .btngoogle input{
-            width: 100%;
-            max-width: 300px;
-            padding: 8px;
-            border-radius: 20px;
-            color: white;
-            background: blue;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-
-
         </style>
 
 </head>
@@ -91,7 +27,7 @@
                 <input type="text" placeholder="Enter your Email">
                 <input type="password" placeholder="Set password">
                 <input type="password" placeholder="Confirm your password">
-                <input class="btnregister" type="submit" value="Register">
+                <input style="border: 1px solid black;" class="btnregister" type="submit" value="Register">
             </div>
             <div>
                 <p style="text-align: center;">Register with......</p>

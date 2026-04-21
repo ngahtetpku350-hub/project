@@ -7,143 +7,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About Casio</title>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .aboutcasio-img {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-    
-    .aboutcasio-img img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        object-fit: cover;
-        display: block;
-    }
-
-    .about-person{
-        width: 90%;
-        background: #F4F5F8;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 40px;
-        padding: 30px;
-    }
-    .about-person h2{
-        margin: 0 0 30px 0;
-    }
-
-    .person-box{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 30px;
-        overflow: hidden;
-        flex-wrap: wrap;
-    }
-
-    .person-box .person-card{
-        background: white;
-        width: 30%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .person-card img{
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
-    .person-card h3,p{
-        text-align: center;
-    }
-
-/* company profile */
-.company-profile {
-    background: #F4F5F8;
-    width: 90%;
-    margin: 5% auto 0 auto;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.company-profile h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
-    color: #333;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-
-.profile-card {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.int-profile-card {
-    flex: 1;
-    min-width: 250px;
-    max-width: 350px;
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    border: none;
-}
-
-
-.int-profile-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.int-profile-card p {
-    color: #666;
-    line-height: 1.5;
-    font-size: 0.9rem;
-}
-/* 4brother history */
-        .casio-history{
-            margin-top: 30px;
-            display: flex;
-            width: 100%;
-            max-width: 90%;
-            flex-direction: column;
-            margin: auto;
-            align-items: center;
-            gap: 40px;
-            padding: 20px 0 20px 0px;
-            background: #F4F5F8;
-        }
-        .casio-history-img{
-            width: 100%;
-            max-width: 100%;
-            display: block;
-            object-fit: cover;
-        }
-        .company-history-img img{
-            max-width: 100%;
-        }
-</style>
 <body>
     <div class="nav">
         <div class="logo">
@@ -163,9 +26,6 @@
                 <li>
                     <a href="contact.html">Contact Us</a>
                 </li>
-                <li>
-                    <a href="news.html">News</a>
-                </li>
             </ul>
         </div>
         <div class="account">
@@ -176,6 +36,16 @@
     <section class="aboutcasio-img">
         <img src="../img/aboutcasio.jpeg" alt="casio img">
     </section>
+
+    <style>
+        @media (max-width: 480px) {
+            .person-card h3, p{
+            font-size: 11px;
+        }
+        }
+        
+    </style>
+
     <section class="about-person">
         <div><h2 style="font-size: 40px;">Our Leater</h2></div>
         <div class="person-box">
